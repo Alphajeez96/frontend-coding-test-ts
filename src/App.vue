@@ -1,9 +1,9 @@
 <template>
-  <div
-    class="min-w-full min-h-screen font-sans text-sm antialiased bg-gray-100 text-center"
-  >
+  <component v-bind:is="$route.meta.layout || LayoutMain">
     <router-view />
-  </div>
+  </component>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import LayoutMain from './components/layout/LayoutMain.vue'
+</script>
