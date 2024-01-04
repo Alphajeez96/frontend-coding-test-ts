@@ -9,6 +9,7 @@ import {
 import Error from '../views/Error.vue'
 import Home from '../views/Home.vue'
 import Pokedex from '../views/Pokedex.vue'
+import DashboardLayout from '../components/layout/Dashboard.vue'
 
 const mainRoutes: RouteRecordRaw[] = [
   {
@@ -22,7 +23,7 @@ const mainRoutes: RouteRecordRaw[] = [
     path: '/Pokedex',
     name: 'Pokedex',
     component: Pokedex,
-    meta: { layout: 'div' },
+    meta: { layout: DashboardLayout },
   },
 ]
 
