@@ -33,7 +33,7 @@ import PokemonDisplay from '../components/PokemonDisplay.vue'
 
 <style lang="scss" scoped>
 input {
-  @apply h-[50px] rounded-lg focus:outline-none text-sm pl-11 text-primary-white w-full;
+  @apply h-[50px] rounded-lg focus:outline-none text-sm pl-11 text-primary-white w-full duration-500;
   border: 0.25px solid rgba(221, 221, 221, 0.5);
   background: rgba(221, 221, 221, 0.05);
 

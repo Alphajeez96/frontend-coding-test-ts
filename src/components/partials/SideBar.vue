@@ -105,8 +105,7 @@
     @apply flex items-center gap-2 text-2xl py-4 px-8 mb-8 cursor-not-allowed;
 
     &.active {
-      @apply cursor-pointer;
-      background: rgba(221, 221, 221, 0.1);
+      @apply cursor-pointer bg-primary-grey;
     }
   }
 }

@@ -5,6 +5,7 @@ module.exports = {
       colors: {
         primary: {
           white: '#ddd',
+          grey: '#dddddd1a',
         },
       },
     },
