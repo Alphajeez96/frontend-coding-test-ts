@@ -1,0 +1,31 @@
+@import './animation';
+@import './fonts';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: 'Clash Display';
+  scroll-behavior: smooth;
+}
+
+.page-holder {
+  @apply rounded-lg w-full bg-primary-grey pl-10;
+  height: calc(100vh - 230px);
+  border: 0.25px solid rgba(221, 221, 221, 0.5);
+  background-repeat: no-repeat;
+  background-image: url('../assets/pokemon-bg.svg');
+
+  .text {
+    @apply mt-auto pb-8 text-[2rem] text-primary-white w-1/3;
+  }
+}
+
+.el-progress-bar__outer {
+  background-color: rgba(255, 154, 68, 0.1) !important;
+}
+
+.el-progress.is-warning .el-progress-bar__inner {
+  background-color: #ff9a44 !important;
+}
