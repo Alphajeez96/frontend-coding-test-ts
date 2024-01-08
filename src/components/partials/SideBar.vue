@@ -3,7 +3,7 @@
     <h1 class="header" v-on:click="$router.push('/')">Pokèdex</h1>
 
     <!-- Nav items -->
-    <nav>
+    <nav class="mt-24">
       <ul>
         <li class="active">
           <img src="../../assets/pokedex.svg" alt="pokedex" />
@@ -28,7 +28,7 @@
 
 <style scoped lang="scss">
 .bar-holder {
-  @apply w-[272px] rounded-lg  text-white  flex flex-col justify-between;
+  @apply w-[272px] rounded-lg  text-white;
   height: calc(100vh - 60px);
   background: rgba(221, 221, 221, 0.1);
 

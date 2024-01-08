@@ -107,6 +107,7 @@ import { ref, onMounted, type Ref } from 'vue'
 import { useRoute } from 'vue-router'
 import axios from 'axios'
 import { capitalizeText, getImageUrl } from '../utils'
+import $toast from '../plugins/notificationToast'
 
 // Types
 type PokemonDetails = {
@@ -144,8 +145,9 @@ const fetchPokemon = async (): Promise<void> => {
     }
 
     details.value = transformed
-  } catch (error) {
-    console.log('ERR::', error)
+    $toast.success('Data retrieved Successfully')
+  } catch (error: any) {
+    $toast.error(error.message || 'An error Occurred')
   } finally {
     loading.value = false
   }
