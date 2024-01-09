@@ -109,7 +109,6 @@ import axios from 'axios'
 import { capitalizeText, getImageUrl } from '../utils'
 import $toast from '../plugins/notificationToast'
 
-// Types
 type PokemonDetails = {
   weight: number
   height: number
@@ -117,12 +116,10 @@ type PokemonDetails = {
   stats: Array<{ base_stat: number; name: string }>
 }
 
-// State
 const route = useRoute()
 const loading: Ref<boolean> = ref(false)
 const details = ref<PokemonDetails | undefined>()
 
-// Functions
 const fetchPokemon = async (): Promise<void> => {
   try {
     loading.value = true
