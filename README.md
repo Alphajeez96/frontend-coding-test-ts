@@ -1,6 +1,6 @@
 # Frontend Coding Challenge
 
-Clone this repo, run `npm install` and start the project using `npm run dev`.
+Clone this repo, run `yarn install` and start the project using `yarn dev`.
 The instructions for completing the task can be found in the site that will launch.
 
 ## Additional Hints
